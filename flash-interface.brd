@@ -162,6 +162,8 @@
 <wire x1="11.176" y1="0" x2="11.176" y2="15.24" width="0" layer="20"/>
 <wire x1="11.176" y1="15.24" x2="0" y2="15.24" width="0" layer="20"/>
 <wire x1="0" y1="15.24" x2="0" y2="0" width="0" layer="20"/>
+<text x="9.398" y="5.969" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">IO8</text>
+<text x="6.858" y="5.969" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">IO25</text>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors" urn="urn:adsk.eagle:library:510">
@@ -179,30 +181,25 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="0603" urn="urn:adsk.eagle:footprint:37386/1" library_version="1">
-<description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
+<package name="0805" urn="urn:adsk.eagle:footprint:37400/1" library_version="1">
+<description>&lt;p&gt;&lt;b&gt;Generic 2012 (0805) package&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
-<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
-<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="0" y="0.889" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.889" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-1.5" y1="0.8" x2="1.5" y2="0.8" width="0.0508" layer="39"/>
+<wire x1="1.5" y1="0.8" x2="1.5" y2="-0.8" width="0.0508" layer="39"/>
+<wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.0508" layer="39"/>
+<wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.0508" layer="39"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="0603" urn="urn:adsk.eagle:package:37414/1" type="box" library_version="1">
-<description>Generic 1608 (0603) package
+<package3d name="0805" urn="urn:adsk.eagle:package:37429/1" type="box" library_version="1">
+<description>Generic 2012 (0805) package
 0.2mm courtyard excess rounded to nearest 0.05mm.</description>
 <packageinstances>
-<packageinstance name="0603"/>
+<packageinstance name="0805"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -493,62 +490,116 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="10uF" x="5.588" y="7.112" smashed="yes">
-<attribute name="PROD_ID" value="CAP-11015" x="20.828" y="-10.668" size="1.778" layer="27" display="off"/>
-</element>
 <element name="J1" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X04" package3d_urn="urn:adsk.eagle:package:22461/2" value="" x="5.588" y="3.048" smashed="yes">
 <attribute name="POPULARITY" value="47" x="24.638" y="-0.762" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="0.508" y="-1.397" size="1.27" layer="27"/>
 </element>
-<element name="U1" library="flash-interface" package="SON127P800X600X80-9N" value="W25N01GVZEIG_TR" x="5.588" y="11.557" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value="IC FLASH 1GBIT 104MHZ 8WSON" x="-17.272" y="24.257" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="HEIGHT" value="0.8mm" x="-17.272" y="24.257" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Winbond" x="-17.272" y="24.257" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="W25N01GVZEIG TR" x="-17.272" y="24.257" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="454-W25N01GVZEIGTR" x="-17.272" y="24.257" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=454-W25N01GVZEIGTR" x="-17.272" y="24.257" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="U1" library="flash-interface" package="SON127P800X600X80-9N" value="W25N01GVZEIG_TR" x="5.588" y="11.43" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="IC FLASH 1GBIT 104MHZ 8WSON" x="-17.272" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="0.8mm" x="-17.272" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Winbond" x="-17.272" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="W25N01GVZEIG TR" x="-17.272" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="454-W25N01GVZEIGTR" x="-17.272" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=454-W25N01GVZEIGTR" x="-17.272" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C1" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0805" package3d_urn="urn:adsk.eagle:package:37429/1" value="10uF" x="2.667" y="6.858" smashed="yes">
+<attribute name="PROD_ID" value="CAP-11330" x="2.667" y="6.858" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
 <signal name="GND">
-<contactref element="C1" pad="2"/>
 <contactref element="U1" pad="4"/>
 <contactref element="U1" pad="9"/>
 <contactref element="J1" pad="4"/>
-<wire x1="5.588" y1="11.557" x2="9.488" y2="13.462" width="0" layer="19" extent="1-1"/>
-<wire x1="6.438" y1="7.112" x2="5.588" y2="11.557" width="0" layer="19" extent="1-1"/>
-<wire x1="4.318" y1="4.318" x2="6.438" y2="7.112" width="0" layer="19" extent="1-1"/>
+<contactref element="C1" pad="2"/>
+<wire x1="5.588" y1="11.43" x2="6.477" y2="12.319" width="0.4572" layer="1"/>
+<wire x1="6.477" y1="12.319" x2="6.477" y2="13.208" width="0.4572" layer="1"/>
+<wire x1="6.477" y1="13.208" x2="6.604" y2="13.335" width="0.4572" layer="1"/>
+<wire x1="6.604" y1="13.335" x2="8.255" y2="13.335" width="0.4572" layer="1"/>
+<via x="8.255" y="13.335" extent="1-16" drill="0.35"/>
+<wire x1="9.488" y1="13.335" x2="8.255" y2="13.335" width="0.4572" layer="1"/>
+<wire x1="4.318" y1="4.318" x2="4.318" y2="5.207" width="0.4572" layer="1"/>
+<wire x1="3.567" y1="5.958" x2="3.567" y2="6.858" width="0.4572" layer="1"/>
+<wire x1="4.318" y1="5.207" x2="3.567" y2="5.958" width="0.4572" layer="1"/>
+<polygon width="0.1524" layer="16" isolate="0.0007625">
+<vertex x="0" y="15.24"/>
+<vertex x="11.176" y="15.24"/>
+<vertex x="11.176" y="0"/>
+<vertex x="0" y="0"/>
+</polygon>
 </signal>
 <signal name="VCC">
-<contactref element="C1" pad="1"/>
 <contactref element="U1" pad="8"/>
 <contactref element="U1" pad="3"/>
 <contactref element="U1" pad="7"/>
 <contactref element="J1" pad="1"/>
-<wire x1="4.738" y1="7.112" x2="9.488" y2="12.192" width="0" layer="19" extent="1-1"/>
-<wire x1="1.688" y1="9.652" x2="4.738" y2="7.112" width="0" layer="19" extent="1-1"/>
-<wire x1="1.688" y1="10.922" x2="1.688" y2="9.652" width="0" layer="19" extent="1-1"/>
-<wire x1="1.778" y1="1.778" x2="4.738" y2="7.112" width="0" layer="19" extent="1-1"/>
+<contactref element="C1" pad="1"/>
+<wire x1="1.688" y1="9.525" x2="1.767" y2="9.446" width="0.4572" layer="1"/>
+<wire x1="1.767" y1="8.255" x2="1.767" y2="6.858" width="0.4572" layer="1"/>
+<wire x1="1.688" y1="9.525" x2="1.688" y2="10.795" width="0.4572" layer="1"/>
+<wire x1="1.778" y1="1.778" x2="3.048" y2="3.048" width="0.3048" layer="1"/>
+<wire x1="2.413" y1="5.588" x2="2.032" y2="5.588" width="0.3048" layer="1"/>
+<wire x1="2.032" y1="5.588" x2="1.767" y2="5.853" width="0.3048" layer="1"/>
+<wire x1="1.767" y1="5.853" x2="1.767" y2="6.858" width="0.3048" layer="1"/>
+<wire x1="3.048" y1="3.048" x2="3.048" y2="4.953" width="0.3048" layer="1"/>
+<wire x1="3.048" y1="4.953" x2="2.413" y2="5.588" width="0.3048" layer="1"/>
+<via x="1.767" y="8.255" extent="1-16" drill="0.35"/>
+<wire x1="1.767" y1="9.446" x2="1.767" y2="8.255" width="0.4572" layer="1"/>
+<wire x1="9.488" y1="12.065" x2="8.382" y2="12.065" width="0.1524" layer="1"/>
+<wire x1="8.382" y1="12.065" x2="8.001" y2="11.684" width="0.1524" layer="1"/>
+<wire x1="8.001" y1="11.684" x2="8.001" y2="8.382" width="0.1524" layer="1"/>
+<wire x1="8.001" y1="8.382" x2="7.366" y2="7.747" width="0.1524" layer="1"/>
+<via x="7.366" y="7.747" extent="1-16" drill="0.35"/>
+<wire x1="1.767" y1="8.255" x2="4.064" y2="8.255" width="0.1524" layer="16"/>
+<wire x1="6.604" y1="8.509" x2="7.366" y2="7.747" width="0.1524" layer="16"/>
+<wire x1="4.064" y1="8.255" x2="4.318" y2="8.509" width="0.1524" layer="16"/>
+<wire x1="4.318" y1="8.509" x2="6.604" y2="8.509" width="0.1524" layer="16"/>
 </signal>
 <signal name="!SS">
 <contactref element="U1" pad="1"/>
 <contactref element="J1" pad="8"/>
-<wire x1="9.398" y1="4.318" x2="9.488" y2="9.652" width="0" layer="19" extent="1-1"/>
+<wire x1="9.488" y1="9.525" x2="9.488" y2="4.408" width="0.1524" layer="1"/>
+<wire x1="9.488" y1="4.408" x2="9.398" y2="4.318" width="0.1524" layer="1"/>
 </signal>
 <signal name="SCLK">
 <contactref element="U1" pad="6"/>
 <contactref element="J1" pad="7"/>
-<wire x1="9.398" y1="1.778" x2="1.688" y2="12.192" width="0" layer="19" extent="1-1"/>
+<wire x1="1.688" y1="12.065" x2="2.413" y2="12.065" width="0.1524" layer="1"/>
+<wire x1="2.413" y1="12.065" x2="2.667" y2="11.811" width="0.1524" layer="1"/>
+<wire x1="4.953" y1="8.128" x2="5.334" y2="7.747" width="0.1524" layer="1"/>
+<via x="5.334" y="7.747" extent="1-16" drill="0.35"/>
+<wire x1="2.667" y1="11.811" x2="2.667" y2="8.509" width="0.1524" layer="1"/>
+<wire x1="2.667" y1="8.509" x2="3.048" y2="8.128" width="0.1524" layer="1"/>
+<wire x1="3.048" y1="8.128" x2="4.953" y2="8.128" width="0.1524" layer="1"/>
+<wire x1="9.398" y1="1.778" x2="9.144" y2="1.778" width="0.1524" layer="16"/>
+<wire x1="9.144" y1="1.778" x2="8.001" y2="2.921" width="0.1524" layer="16"/>
+<wire x1="8.001" y1="2.921" x2="8.001" y2="5.08" width="0.1524" layer="16"/>
+<wire x1="8.001" y1="5.08" x2="5.334" y2="7.747" width="0.1524" layer="16"/>
 </signal>
 <signal name="MISO">
 <contactref element="U1" pad="2"/>
 <contactref element="J1" pad="5"/>
-<wire x1="6.858" y1="1.778" x2="9.488" y2="10.922" width="0" layer="19" extent="1-1"/>
+<wire x1="9.488" y1="10.795" x2="8.89" y2="10.795" width="0.1524" layer="1"/>
+<wire x1="8.89" y1="10.795" x2="8.636" y2="10.541" width="0.1524" layer="1"/>
+<wire x1="8.636" y1="5.461" x2="8.255" y2="5.08" width="0.1524" layer="1"/>
+<wire x1="8.255" y1="5.08" x2="8.255" y2="2.921" width="0.1524" layer="1"/>
+<wire x1="8.255" y1="2.921" x2="7.112" y2="1.778" width="0.1524" layer="1"/>
+<wire x1="7.112" y1="1.778" x2="6.858" y2="1.778" width="0.1524" layer="1"/>
+<wire x1="8.636" y1="10.541" x2="8.636" y2="5.461" width="0.1524" layer="1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="U1" pad="5"/>
 <contactref element="J1" pad="3"/>
-<wire x1="4.318" y1="1.778" x2="1.688" y2="13.462" width="0" layer="19" extent="1-1"/>
+<wire x1="1.688" y1="13.335" x2="2.667" y2="13.335" width="0.1524" layer="1"/>
+<wire x1="3.302" y1="12.7" x2="3.302" y2="8.89" width="0.1524" layer="1"/>
+<wire x1="2.667" y1="13.335" x2="3.302" y2="12.7" width="0.1524" layer="1"/>
+<wire x1="3.302" y1="8.89" x2="3.556" y2="8.636" width="0.1524" layer="1"/>
+<wire x1="5.715" y1="8.636" x2="6.223" y2="8.128" width="0.1524" layer="1"/>
+<wire x1="6.223" y1="8.128" x2="6.223" y2="7.239" width="0.1524" layer="1"/>
+<wire x1="5.588" y1="3.048" x2="4.318" y2="1.778" width="0.1524" layer="1"/>
+<wire x1="3.556" y1="8.636" x2="5.715" y2="8.636" width="0.1524" layer="1"/>
+<wire x1="6.223" y1="7.239" x2="5.588" y2="6.604" width="0.1524" layer="1"/>
+<wire x1="5.588" y1="6.604" x2="5.588" y2="3.048" width="0.1524" layer="1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
